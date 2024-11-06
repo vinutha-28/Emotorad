@@ -1,0 +1,129 @@
+/* Small device (Mobile) */
+@media only screen and (max-width: 480px) {
+    #notification.show,
+    #setting.show,
+    .sidebar.show {
+        width: 100%;
+    }
+
+    .logo-box .logo {
+        width: 150px;
+        flex-shrink: 1;
+        border-radius: 40%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #mobile-action {
+        display: block;
+    }
+
+    .header .primary-btn,
+    #mobile-action ~ .action-btn {
+        display: none;
+    }
+
+    .header-action .action-btn {
+        margin: 0 8px !important;
+    }
+
+    .report-item.medium {
+        width: 100% !important;
+    }
+
+}
+
+@media only screen and (max-width: 940px) {
+    .header-action {
+        margin-left: auto;
+    }
+    .search-box {
+        display: none;
+    }
+
+    .container .main .header .header-action .search-mobile {
+        display: block;
+    }
+
+    .report-list .report-item.large {
+        width: 100%;
+    }
+
+    .report-item.medium {
+        --medium-report: 2;
+        width: calc((100%/var(--medium-report)) - (var(--gap)*(var(--medium-report) - 1)/var(--medium-report)));
+    }
+}
+
+/* Medium devices (ipad, lower 1199px) */
+@media only screen and (max-width: 1199px) {
+    .vetra {
+        width: 100%;
+    }
+
+    .vetra.move {
+        transform: unset;
+    }
+
+    .container {
+        inset: 0;
+    }
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.reverse {
+        background-color: var(--bg);
+        transform: translateX(-100%);
+    }
+
+    .main .header .menu-sidebar {
+        display: block;
+    }
+
+    #notification.show,
+    #setting.show {
+        transform: translateX(0);
+    }
+
+    .vetra.move .container {
+        overflow-y: scroll;
+    }
+
+    #notification.show ~ .overlay {
+        opacity: 1;
+        z-index: 990;
+    }
+
+    #notification,
+    #setting {
+        transform: translateX(100%);
+        box-shadow: 0 0 30px var(--light-gray);
+    }
+}
+
+/* Large devices (laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #notification.show ~ .overlay {
+        opacity: 0;
+        z-index: -999;
+    }
+
+    .sidebar {
+        background-color: var(--bg) !important;
+    }
+
+    .sidebar.show .sidebar-box .account {
+        background-color: var(--white);
+    }
+
+    .sidebar.show .close-sidebar {
+        display: none;
+    }
+
+    .sidebar.show ~ .overlay {
+        opacity: 0;
+        z-index: -999;
+    }
+}

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loss Online Store</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="vendors/css/mixin.css">
+    <link rel="stylesheet" href="vendors/css/style.css">
+    <link rel="stylesheet" href="vendors/css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="icons8-crocodile-48.ico">
+</head>
+
+<body>
+    <section class="vetra">
+        <aside class="sidebar reverse">
+            <div class="logo-box flex-vertical">
+                <a href="#" class="logo flex-vertical">
+                    <img class="image" src="cmg.jpeg" alt="Vetra logo">
+                </a>
+                <div class="close-sidebar">
+                    <i class="bi bi-x"></i>
+                </div>
+            </div>
+            <div class="sidebar-box scrollable scroll-visible">
+                <div class="account rounded bg-white flex-vertical">
+                    <div class="account-image circle">
+                        <img class="image" src="imagme.jpg" alt="avatar">
+                    </div>
+                    <div class="account-infor">
+                        <h4 class="name">Vinutha </h4>
+                        <span class="role">Sales Manager</span>
+                    </div>
+                    <ul class="account-action bg-white rounded">
+                        <li class="account-action-item">
+                            <a href="#">
+                                <i class="bi bi-person"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="account-action-item">
+                            <a href="#">
+                                <i class="bi bi-envelope"></i>
+                                Inbox
+                            </a>
+                        </li>
+                        <li class="account-action-item setting">
+                            <a href="#">
+                                <i class="bi bi-gear"></i>
+                                Setting
+                            </a>
+                        </li>
+                        <li class="account-action-item">
+                            <a href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-group">
+                    <span class="sidebar-title">E-Commerce</span>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item active">
+                            <a href="#">
+                                <i class="bi bi-bar-chart"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item parent">
+                            <a href="#">
+                                <i class="bi bi-receipt"></i>
+                                <span>Orders</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <ul class="sidebar-dropdown">
+                                <li class="sidebar-dropdown-item"><a href="#">List</a></li>
+                                <li class="sidebar-dropdown-item"><a href="#">Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item parent">
+                            <a href="#">
+                                <i class="bi bi-truck"></i>
+                                <span>Products</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </li>
+                        <li class="sidebar-item parent">
+                            <a href="#">
+                                <i class="bi bi-wallet"></i>
+                                <span>Buyer</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <ul class="sidebar-dropdown">
+                                <li class="sidebar-dropdown-item"><a href="#">Dashboard</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <i class="bi bi-person-badge"></i>
+                                <span>Customer</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item parent">
+                            <a href="#">
+                                <i class="bi bi-receipt-cutoff"></i>
+                                <span>Invoices</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <ul class="sidebar-dropdown">
+                                <li class="sidebar-dropdown-item"><a href="#">List</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-group">
+                    <span class="sidebar-title">Apps</span>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <i class="bi bi-chat-square"></i>
+                                <span>Chats</span>
+                                <span class="sidebar-badge badge flex-center bg-success count circle">15</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item parent">
+                            <a href="#">
+                                <i class="bi bi-envelope"></i>
+                                <span>Email</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <ul class="sidebar-dropdown">
+                                <li class="sidebar-dropdown-item"><a href="#">Inbox</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="sidebar-item parent">
+                            <a href="#">
+                                <i class="bi bi-check-circle"></i>
+                                <span>Loss App</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <ul class="sidebar-dropdown">
+                                <li class="sidebar-dropdown-item"><a href="#">List</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-group">
+                    <span class="sidebar-title">Pages</span>
+                    <ul class="sidebar-list">
+                        <li class="sidebar-item parent">
+                            <a href="#">
+                                <i class="bi bi-person"></i>
+                                <span>Profile</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <ul class="sidebar-dropdown">
+                                <li class="sidebar-dropdown-item"><a href="#">Post</a></li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-item parent">
+                            <a href="#">
+                                <i class="bi bi-person-circle"></i>
+                                <span>Users</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            <ul class="sidebar-dropdown">
+                                <li class="sidebar-dropdown-item"><a href="#">List View</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <i class="bi bi-gear"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <i class="bi bi-postcard"></i>
+                                <span>Pricing Table</span>
+                                <span class="sidebar-badge bg-success text rounded">New</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <i class="bi bi-search"></i>
+                                <span>Search Page</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                <i class="bi bi-question-circle"></i>
+                                <span>FAQ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <section class="container">
+            <div class="main">
+                <nav class="header bg">
+                    <div class="menu-sidebar">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <div class="title">
+                        <h2>Dashboard</h2>
+                    </div>
+                    <div class="search-box flex-vertical bg-white">
+                        <label for="search">
+                            <i class="bi bi-search"></i>
+                        </label>
+                        <input id="search" type="text" name="search" placeholder="Search...">
+                    </div>
+                    <ul class="header-action flex-vertical">
+                        <li class="search-mobile action-btn">
+                            <i class="bi bi-search"></i>
+                        </li>
+                        <li id="mobile-action" class="action-btn">
+                            <i class="bi bi-three-dots"></i>
+                        </li>
+                        <li class="notify action-btn">
+                            <i class="bi bi-bell"></i>
+                            <span id="notification-badge-count" class="badge bg-error circle flex-center">10</span>
+                        </li>
+                    </ul>
+                    <a class="primary-btn rounded flex-center" href="#">
+                        <i class="bi bi-plus-circle"></i>
+                        <span>Add Product</span>
+                    </a>
+                </nav>
+                <nav class="header-mobile bg-white reverse flex">
+                    <ul class="header-mobile-action flex">
+                        <li class="notify action-btn">
+                            <i class="bi bi-bell"></i>
+                            <span id="notification-badge-count" class="badge bg-error circle flex-center">10</span>
+                        </li>
+                        
+                    </ul>
+                    <a class="primary-btn rounded flex-center" href="#">
+                        <i class="bi bi-plus-circle"></i>
+                        <span>Add Product</span>
+                    </a>
+                </nav>
+                <div class="content">
+                    <ul class="report-list flex">
+                        <li class="report-item large flex column sales-chart">
+                            <div class="report-header flex-vertical">
+                                <h3 class="report-title">Sales chart</h3>
+                                <div class="tooltip flex-center">
+                                    <span>?</span>
+                                    <p class="tooltip-text">Daily orders and sales</p>
+                                </div>
+                            </div>
+                            <div class="report-card bg-white rounded">
+                                <div class="report-card-header flex-vertical">
+                                    <div class="sales-figure-wrapper flex-vertical">
+                                        <i class="bi bi-bag-check"></i>
+                                        <h2 class="total-sales">Rs.15,52,400</h2>
+                                        <div class="changing-rate-wrapper">
+                                            <span class="bi bi-arrow-up"></span>
+                                            8.30%
+                                        </div>
+                                    </div>
+                                    <select name="sales-date-picker" id="sales-date-picker" title="Sales Date Picker">
+                                        <optgroup label="2023">
+                                            <option value="02 October 2023">October</option>
+                                            <option value="02 November 2023">November</option>
+                                            <option value="02 December 2023">December</option>
+                                        </optgroup>
+                                        <optgroup label="2024">
+                                            <option value="02 January 2024">January</option>
+                                            <option value="02 February 2024">February</option>
+                                            <option value="02 March 2024">March</option>
+                                            <option value="02 April 2024">April</option>
+                                            <option value="02 May 2024">May</option>
+                                            <option value="02 June 2024">June</option>
+                                            <option value="02 July 2024">July</option>
+                                            <option value="02 August 2024">August</option>
+                                            <option value="02 September 2024">September</option>
+                                            <option value="02 October 2024">October</option>
+                                            <option value="02 November 2024">November</option>
+                                            <option value="02 December 2024" selected>December</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div id="sales-chart"></div>
+                            </div>
+                        </li>
+                        <li class="report-item large flex column channels-chart">
+                            <div class="report-header flex-vertical">
+                                <h3 class="report-title">Product Tracking</h3>
+                                <div class="tooltip flex-center">
+                                    <p class="tooltip-text">Analise the Product</p>
+                                </div>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="report-card bg-white rounded">
+                                <div id="channels-chart"></div>
+                            </div>
+                        </li>
+                        <li class="report-item medium flex column orders">
+                            <div class="report-header flex-vertical">
+                                <h3 class="icon">Men's Outfits</i></h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<h3 class="report-title">Orders</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="2.jpg"  class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+                        <li class="report-item medium flex column sales">
+                             <div class="report-header flex-vertical">
+                             <h3 class="icon">Men's Shirts</h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                   <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                               
+									
+								
+                            </div>
+                            <!--<h3 class="report-title">Sales</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="1.jpg" class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						<li class="report-item medium flex column sales">
+                             <div class="report-header flex-vertical">
+                             <h3 class="icon">Men's Pants</h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                   <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                               
+									
+								
+                            </div>
+                            <!--<h3 class="report-title">Sales</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="4.jpg" class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						<li class="report-item medium flex column sales">
+                             <div class="report-header flex-vertical">
+                             <h3 class="icon">Watches</h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                   <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                               
+									
+								
+                            </div>
+                            <!--<h3 class="report-title">Sales</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="5.jpg" class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						
+						<li class="report-item medium flex column sales">
+                             <div class="report-header flex-vertical">
+                             <h3 class="icon">Men's Jackets</h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                   <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                               
+									
+								
+                            </div>
+                            <!--<h3 class="report-title">Sales</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="3.jpg" class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+                        <li class="report-item medium flex column orders">
+                            <div class="report-header flex-vertical">
+                                <h3 class="icon">Men's Trackpants</i></h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<h3 class="report-title">Orders</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="12.jpg"  class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+                       
+                       <li class="report-item medium flex column orders">
+                            <div class="report-header flex-vertical">
+                                <h3 class="icon">Women's Outfits</i></h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<h3 class="report-title">Orders</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="6.jpg"  class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						<li class="report-item medium flex column orders">
+                            <div class="report-header flex-vertical">
+                                <h3 class="icon">Women's Kurtas</i></h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<h3 class="report-title">Orders</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="7.jpg"  class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						<li class="report-item medium flex column orders">
+                            <div class="report-header flex-vertical">
+                                <h3 class="icon">Women's Sarees</i></h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<h3 class="report-title">Orders</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="8.jpg"  class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						<li class="report-item medium flex column orders">
+                            <div class="report-header flex-vertical">
+                                <h3 class="icon">Women's Skirts</i></h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<h3 class="report-title">Orders</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="9.jpg"  class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						<li class="report-item medium flex column orders">
+                            <div class="report-header flex-vertical">
+                                <h3 class="icon">Women's T-shirts</i></h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<h3 class="report-title">Orders</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="10.jpg"  class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						<li class="report-item medium flex column orders">
+                            <div class="report-header flex-vertical">
+                                <h3 class="icon">Women's Trackpants</i></h3>
+                                <div class="report-action">
+                                    <span><i class="bi bi-three-dots"></i></span>
+                                    <div class="report-action-wrapper bg-white rounded">
+                                        <a href="#" class="report-action-item">View Detail</a>
+                                        <a href="#" class="report-action-item" download>Download</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--<h3 class="report-title">Orders</h3>-->
+                            <div class="report-card bg-white rounded">
+								<img src="11.jpg"  class="imgs" alt="piechart" width="10%" height="20%">
+                            </div>
+                        </li>
+						
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer">
+                <ul class="footer-box">
+                    <li class="author">
+                        © 2024 Loss
+                    </li>
+                    <li class="footer-item">
+                        <a href="#">Licenses</a>
+                    </li>
+                    <li class="footer-item">
+                        <a href="#">Get Help</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script src="vendors/js/main.js"></script>
+    <script src="vendors/js/chart.js"></script>
+</body>
+
+</html>

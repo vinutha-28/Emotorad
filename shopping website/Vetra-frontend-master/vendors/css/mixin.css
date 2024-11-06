@@ -1,0 +1,168 @@
+/* Hover */ 
+
+.hover:hover {
+    color: var(--primary);
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+
+/* Background */
+
+.bg {
+    background-color: var(--bg);
+}
+
+.bg-white {
+    background-color: var(--white)
+}
+
+.bg-success {
+    background-color: var(--success);
+}
+
+.bg-error {
+    background-color: var(--error);
+}
+
+/* btn */
+
+.btn.btn-success {
+    background-color: var(--success);
+}
+
+.btn.btn-success:hover {
+    background-color: var(--dark-success);
+}
+
+.btn.btn-warning {
+    background-color: var(--primary);
+}
+
+.btn.btn-warning:hover {
+    background-color: var(--dark-primary);
+}
+
+.btn.btn-error {
+    background-color: var(--error);
+}
+
+.btn.btn-error:hover {
+    background-color: var(--dark-error);
+}
+
+/* Reset Image */
+
+.image {
+    width: 100%;
+}
+
+/* Rouded */
+
+.circle {
+    border-radius: 50%;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+/* Flex */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.flex-horizon {
+    display: flex;
+    justify-content: center;
+}
+
+.flex .grow {
+    flex-grow: 1;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.pointer > * {
+    cursor: pointer;
+}
+
+/* Scroll */
+
+.scrollable {
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scrollable.scroll-visible::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable:hover::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.scrollable:hover::-webkit-scrollbar-thumb  {
+    background-color: var(--normal-primary);
+}
+
+/* Animation */
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeToRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes floatFromRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
